@@ -1,0 +1,21 @@
+def fizzbuzz(num):
+    # i dimulai dari 1 ke num
+    for i in range(1, num+1):
+        # kalau bisa dibagi 15, artinya bisa dibagi 3 dan 5
+        # Maka dari itu, print FizzBuzz
+        if (i % 15 == 0):
+            print('FizzBuzz')
+
+        # Sekarang untuk yang habis dibagi 3, print Fizz
+        elif (i % 3 == 0):
+            print('Fizz')
+
+        # Kemudian untuk yang habis dibagi 5, print Buzz
+        elif (i % 5 == 0):
+            print('Buzz')
+        # Selain itu, print nomer aja
+        else:
+            print(i)
+
+
+fizzbuzz(20)
